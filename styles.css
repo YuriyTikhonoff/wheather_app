@@ -10,4 +10,128 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+
+.header {
+  height: 80px;
+  background-color: #648cff;
+}
+
+.header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-container .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header .header-container .nav-list .nav-link {
+  margin: 10%;
+}
+
+.header .header-container .nav-list a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.header .header-container .sm-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  display: flex;
+  margin-left: 50px;
+}
+
+.header .header-container .sm-list a {
+  text-decoration: none;
+  margin: 20px;
+}
+
+.header .logo {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.first-section {
+  height: 910px;
+  background-image: url(./images/bg_1575.png);
+}
+
+.first-section .first-section-container {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first-section .first-section-container .first-section__rigth-section {
+  padding-top: 80px;
+  padding-right: 100px;
+}
+
+.first-section .first-section-container .first-section__rigth-section .rigth-section__title {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.first-section .first-section-container .first-section__rigth-section .rigth-section__desc {
+  padding-top: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.first-section .first-section-container .first-section__rigth-section .rigth-section__buttons {
+  padding-top: 55px;
+}
+
+.first-section .first-section-container .first-section__rigth-section .rigth-section__buttons button {
+  margin-right: 12px;
+}
+
+.first-section .first-section-container .first-section__left-section {
+  padding: 0 160px 0 110px;
+}
+
+.btn {
+  width: 158px;
+  height: 52px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.danger {
+  background-color: #fc6a42;
+}
+
+.primary {
+  background-color: #4466c9;
+}
 /*# sourceMappingURL=styles.css.map */
