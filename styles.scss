@@ -56,38 +56,109 @@
 
 .first-section {
     height: 910px;
+    position: relative;
     //background-color: #648cff;
     background-image: url(./images/bg_1575.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     & .first-section-container{
         padding-top: 100px;
         display: flex;
-        & .first-section__rigth-section {
+        & .first-section__left-section {
             padding-top: 80px;
             padding-right: 100px;
-            & .rigth-section__title{
+            & .left-section__title{
                 font-size: 60px;
                 line-height: 1.2;
                 font-weight: 700;
                 color: #ffffff;
             }
 
-            & .rigth-section__desc {
+            & .left-section__desc {
                 padding-top: 40px;
                 font-size: 18px;
                 line-height: 30px;
                 font-weight: 400;
                 color: #ffffff;
             }
-            & .rigth-section__buttons{
+            & .left-section__buttons{
                 padding-top: 55px;
                 & button {
                     margin-right: 12px;
                 }
             }
         }
-        & .first-section__left-section {
+        & .first-section__right-section {
             padding: 0 160px 0 110px;
+            position: relative;
+            & .bubble{
+                border-radius: 50%;
+                width: 90px;
+                height: 90px;
+                //background-color: #fc6a42;
+                font-size: 18px;
+                line-height: 166px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: -0.05em;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+            }
+            & .bbl-sm {
+                width: 55px;
+                height: 55px;
+                font-size: 18px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #648cff;
+            }
 
+            .bubble.primary {
+                top:270px;
+                right: 35px;
+            }
+
+            .bubble.danger {
+                top:300px;
+                left: -20px;
+            }
+
+            .bbl-sm.bg-white {
+                top:70px;
+                right: 75px;
+            }
+            .bbl-sm.bg-yellow {
+                top:570px;
+                right: 65px;                
+            }
+        }
+    }
+    & .clicker {
+        border-radius: 50%;
+        width: 49px;
+        height: 49px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-right: solid 1px red;
+            border-bottom: solid 1px red;
+            transform: rotate(45deg);
         }
     }
 }
@@ -111,4 +182,12 @@
 
 .primary {
     background-color: #4466c9;
+}
+
+.bg-yellow{
+    background-color: #fcec64;
+}
+
+.bg-white {
+    background-color: #ffffff;
 }
